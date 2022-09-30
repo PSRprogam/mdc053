@@ -1,1 +1,67 @@
-<mxfile host="app.diagrams.net" modified="2022-09-30T22:19:29.160Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" version="20.4.0" etag="T6IsZjL4D9rblpSQAAZt" type="github"><diagram id="03Wt_PcTr0ts9BA2G4L1">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-09-30T22:54:40.170Z" agent="5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36" etag="wzFyyZfiVsCtA5ZqxjK2" version="20.4.0" type="github">
+  <diagram id="03Wt_PcTr0ts9BA2G4L1" name="Página-1">
+    <mxGraphModel dx="721" dy="533" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="o7DBataw3mSRDND_M3au-10" value="CLIENTE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="110" y="110" width="140" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-11" value="* CNPJ&#xa;Tipo_Logradouro&#xa;Nome_Logradouro&#xa;Numero_Logradouro" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;" vertex="1" parent="o7DBataw3mSRDND_M3au-10">
+          <mxGeometry y="30" width="140" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-17" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToMany;startArrow=ERzeroToOne;rounded=0;exitX=0.996;exitY=0.288;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="o7DBataw3mSRDND_M3au-11">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="170" y="320" as="sourcePoint" />
+            <mxPoint x="350" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-18" value="ABRE" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="o7DBataw3mSRDND_M3au-17">
+          <mxGeometry x="-0.0137" y="1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-19" value="CHAMADOS" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="350" y="110" width="140" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-20" value="" style="edgeStyle=entityRelationEdgeStyle;fontSize=12;html=1;endArrow=ERzeroToOne;startArrow=ERmandOne;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="490" y="160" as="sourcePoint" />
+            <mxPoint x="600" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-21" value="GERA" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="o7DBataw3mSRDND_M3au-20">
+          <mxGeometry x="0.2091" y="-2" relative="1" as="geometry">
+            <mxPoint x="-17" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-22" value="ORDEM DE SERVIÇO" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="600" y="112" width="140" height="105" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-23" value="Nº_IDENTIFICAÇÃO&#xa;DESCRIÇÃO&#xa;DATA/HORA_FIM/INICIO&#xa;LOCAL_DO_SERVIÇO" style="text;strokeColor=none;fillColor=none;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontSize=12;rounded=1;" vertex="1" parent="o7DBataw3mSRDND_M3au-22">
+          <mxGeometry y="30" width="140" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-27" value="ADMINISTRA" style="fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;startArrow=ERzeroToMany;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0769" width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="660" y="280" as="sourcePoint" />
+            <mxPoint x="660" y="215" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-28" value="SETOR DE CONTROLE" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="170" height="127.5" as="geometry" />
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-29" value="ATRIBUIIR" style="fontSize=12;html=1;endArrow=ERzeroToMany;endFill=1;startArrow=ERzeroToMany;strokeWidth=2;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1">
+          <mxGeometry x="-0.0769" width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="654.3799999999998" y="472.5000000000001" as="sourcePoint" />
+            <mxPoint x="654.3799999999998" y="407.4999999999999" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="o7DBataw3mSRDND_M3au-30" value="SETOR RESPONSÁVEL" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;rounded=0;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="570" y="470" width="170" height="127.5" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
